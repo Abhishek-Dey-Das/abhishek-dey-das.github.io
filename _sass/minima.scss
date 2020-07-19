@@ -71,6 +71,25 @@ $on-laptop:        800px !default;
 	//list-style-position: inside;
 }
 
+#search-container {
+	max-width: 100%;
+}
+
+input[type=text] {
+	font-size: normal;
+	outline: none;
+	padding: 1rem;
+	background: rgb(236, 237, 238);
+	width: 100%;
+	-webkit-appearance: none;
+	font-family: inherit;
+	font-size: 100%;
+	border: none;
+}
+#results-container {
+	margin: .5rem 0;
+}
+
 // Import partials.
 @import
   "minima/base",
