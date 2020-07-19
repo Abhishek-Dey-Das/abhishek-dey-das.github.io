@@ -26,6 +26,7 @@ url: "https://deydas.com" # the base hostname & protocol for your site, e.g. htt
 twitter_username: adeydas
 github_username:  adeydas
 linkedin_username: adeydas
+sourcecode_github: Abhishek-Dey-Das/abhishek-dey-das.github.io
 
 # Build settings
 theme: minima
