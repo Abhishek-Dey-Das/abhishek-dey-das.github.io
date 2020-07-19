@@ -1,0 +1,26 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      
+      <div class="footer-col footer-col-1">
+        <p>Find me</p>
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Subscribe</p>
+        <p><a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Legal stuff</p>
+        <p>{%- include disclaimer.html -%}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
