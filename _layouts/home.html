@@ -11,14 +11,13 @@ layout: default
   <p>&nbsp;</p>
   <div><h2>Blog posts</h2>
   {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-        <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }} - <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-        </li>
-      {%- endfor -%}
+  <div class="posts">
+    <ul>
+      {% for post in site.posts %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
+      {% endfor %}
     </ul>
+  </div>
   {%- endif -%}
 
 </div>
