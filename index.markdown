@@ -4,4 +4,7 @@
 
 layout: home
 ---
-Some content. Blah Blah....
+<ul>
+    <li>Software Engineer by profession &#9734;</li>
+    <li>Tech enthusiast by passion</li>
+</ul>
