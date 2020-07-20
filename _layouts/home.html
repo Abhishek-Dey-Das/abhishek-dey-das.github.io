@@ -8,10 +8,10 @@ layout: default
   {%- endif -%}
 
   {{ content }}
+  
+  {%- if site.posts.size > 0 -%}
   <p>&nbsp;</p>
   <div><h2>Writings</h2>
-
-  {%- if site.posts.size > 0 -%}
   <div class="posts">
     <ul>
       {% for category in site.categories %}
