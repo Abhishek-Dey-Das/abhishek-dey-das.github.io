@@ -9,12 +9,16 @@ layout: default
 
   {{ content }}
   <p>&nbsp;</p>
-  <div><h2>Blog posts</h2>
+  <div><h2>Writings</h2>
+
   {%- if site.posts.size > 0 -%}
   <div class="posts">
     <ul>
-      {% for post in site.posts %}
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
+      {% for category in site.categories %}
+        <h3>{{ category | first }}</h3>
+        {% for post in category.last %}
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
+        {% endfor %}
       {% endfor %}
     </ul>
   </div>
