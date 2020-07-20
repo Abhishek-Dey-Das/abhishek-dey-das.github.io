@@ -8,3 +8,4 @@ layout: home
     <li>Software Engineer by profession &#9734;</li>
     <li>Tech enthusiast by passion</li>
 </ul>
+<div class="home-test-mission-statement">My personal mission statement is to solve the world's problems with technology</div>
