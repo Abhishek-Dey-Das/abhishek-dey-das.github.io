@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<script lang="text/javascript">
+    window.location.replace("{{ page.linktocontent }}")
+</script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Read more at <a href="https://{{ page.linktocontent }}">{{ page.title | escape }}</a></p>
+  </div>
+</article>
